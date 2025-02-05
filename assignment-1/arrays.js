@@ -48,6 +48,9 @@ console.log(getById(5));
 //   date_of_birth: '2020/10/04'
 // }
 
+console.log(getById(532)); // it will return undefined as there is no entry with id 532
+// undefined
+
 /**********************************************************************************************/
 
 /**

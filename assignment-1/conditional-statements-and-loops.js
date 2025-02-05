@@ -7,10 +7,10 @@
  * ○ Print adult to the console if age is above 18
  */
 
-let age1 = 25;
-if (age1 <= 12) {
+let age = 25;
+if (age <= 12) {
   console.log("child");
-} else if (age1 >= 13 && age1 <= 18) {
+} else if (age >= 13 && age <= 18) {
   console.log("teen");
 } else {
   console.log("adult");
@@ -23,12 +23,12 @@ if (age1 <= 12) {
  * Do the same using switch case.
  */
 
-let age2 = 25;
+age = 25;
 switch (true) {
-  case age2 <= 12:
+  case age <= 12:
     console.log("child");
     break;
-  case age2 >= 13 && age2 <= 18:
+  case age >= 13 && age <= 18:
     console.log("teen");
     break;
   default:
@@ -42,9 +42,9 @@ switch (true) {
  * Declare a variable let arraySize = 25;.
  * Using a for loop, add numbers from one onwards into an array till the arraySize is reached.
  */
-let arraySize1 = 25;
+let arraySize = 25;
 let arr1 = [];
-for (let i = 1; i <= arraySize1; i++) {
+for (let i = 1; i <= arraySize; i++) {
   arr1.push(i);
 }
 
@@ -54,10 +54,10 @@ for (let i = 1; i <= arraySize1; i++) {
  * Question 4
  * Accomplish the same using a while loop.
  */
-let arraySize2 = 25;
+arraySize = 25;
 let arr2 = [];
 let i = 1;
-while (i <= arraySize2) {
+while (i <= arraySize) {
   arr2.push(i);
   i++;
 }

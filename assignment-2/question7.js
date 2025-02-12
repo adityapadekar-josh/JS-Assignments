@@ -4,9 +4,11 @@
  * Complete the above tasks with async/await.
  */
 
+import { link } from "./lib";
+
 const fetchData = async () => {
   try {
-    const response = await fetch("https://reqres.in/api/users");
+    const response = await fetch(link);
 
     if (!response.ok) {
       throw new Error("Error occurred while fetching data");

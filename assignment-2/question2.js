@@ -3,8 +3,10 @@
  * Log the data into the console once it is received
  */
 
+import { link } from "./lib";
+
 const fetchData = () => {
-  fetch("https://reqres.in/api/users")
+  fetch(link)
     .then((response) => {
       if (!response.ok) {
         console.log("Error occurred while fetching data")

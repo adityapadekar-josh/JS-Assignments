@@ -17,3 +17,7 @@ const func = async () => {
 };
 
 func();
+
+// OUTPUT
+// Printing before
+// Printing after

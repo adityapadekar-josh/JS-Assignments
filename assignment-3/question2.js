@@ -5,7 +5,7 @@
 const form = document.getElementById("blogForm");
 const responseMessage = document.getElementById("responseMessage");
 
-form.addEventListener("submit", async (e) => {
+const submitBlog = async (e) => {
   e.preventDefault();
 
   const title = document.getElementById("title").value;
@@ -30,4 +30,6 @@ form.addEventListener("submit", async (e) => {
   } catch (error) {
     responseMessage.innerHTML = "Error submitting blog.";
   }
-});
+};
+
+form.addEventListener("submit", submitBlog);

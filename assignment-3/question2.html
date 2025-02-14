@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Blog</title>
+</head>
+
+<body>
+  <h1>Submit Your Blog</h1>
+  <form id="blogForm">
+    <div>
+      <label for="title">Blog Title:</label>
+      <input type="text" id="title" name="title" required>
+    </div>
+    <div>
+      <label for="author">Author:</label>
+      <input type="text" id="author" name="author" required>
+    </div>
+    <div>
+      <label for="content">Blog Content:</label>
+      <textarea id="content" name="content" required></textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="responseMessage"></div>
+
+  <script src="./question2.js">
+
+  </script>
+</body>
+
+</html>

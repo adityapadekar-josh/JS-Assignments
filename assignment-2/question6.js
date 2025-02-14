@@ -3,10 +3,10 @@
  * after the data has been received in the fetch.
  */
 
-import { link } from "./lib";
+import { BASE_URL } from "./lib";
 
 const fetchData = () => {
-  fetch(link)
+  fetch(BASE_URL)
     .then((response) => {
       if (!response.ok) {
         throw new Error("Error occurred while fetching data");

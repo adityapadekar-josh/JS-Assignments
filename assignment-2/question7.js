@@ -4,11 +4,11 @@
  * Complete the above tasks with async/await.
  */
 
-import { link } from "./lib";
+import { BASE_URL } from "./lib";
 
 const fetchData = async () => {
   try {
-    const response = await fetch(link);
+    const response = await fetch(BASE_URL);
 
     if (!response.ok) {
       throw new Error("Error occurred while fetching data");
